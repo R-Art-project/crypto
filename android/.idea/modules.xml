@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crypto.iml" filepath="$PROJECT_DIR$/.idea/modules/crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/crypto.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/crypto.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1882316692/crypto.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1882316692/crypto.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-55475261/crypto.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-55475261/crypto.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-267744135/crypto.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-267744135/crypto.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1120749716/crypto.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1120749716/crypto.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-635687292/crypto.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-635687292/crypto.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>

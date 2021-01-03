@@ -1,0 +1,6 @@
+module Pods_crypto_cryptoTests {
+  umbrella header "Pods-crypto-cryptoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
