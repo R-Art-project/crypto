@@ -7,6 +7,7 @@ import {
   FlatList,
   SectionList,
   Pressable,
+  Alert,
 } from 'react-native';
 import Colors from 'crypto/src/res/colors';
 import Http from 'crypto/src/libs/Http';
@@ -42,17 +43,33 @@ class CoinsDetailScreen extends Component {
     try {
       const key = `favorite-${this.state.coin.id}`;
       const favStr = await Storage.instance.get(key);
-      console.log('fav', favStr);
+      if (favStr != null) {
+        this.setState({isFavorite: true});
+      }
     } catch (err) {
       console.log('get favorite err', err);
     }
   };
 
   removeFavorite = async () => {
-    const key = `favorite-${this.state.coin.id}`;
-    await Storage.instance.remove(key);
-    this.setState({isFavorite: false});
+    Alert.alert("Remove Favorite", "Are you sure?", [
+      {
+        text: "cancel",
+        onPress: () => {},
+        style: "cancel"
+      },
+      {
+        text: "Remove",
+        onPress: async () => {
+          const key = `favorite-${this.state.coin.id}`;
+          await Storage.instance.remove(key);
+          this.setState({isFavorite: false});
+        },
+        style: "destructive"
+      }
+    ])
   };
+
 
   getSymbolIcon = (coinNameId) => {
     if (coinNameId) {
